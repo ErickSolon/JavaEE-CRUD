@@ -53,6 +53,8 @@ public class PessoasController extends HttpServlet {
 		pessoas.setNome(request.getParameter("nome"));
 		pessoas.setSobrenome(request.getParameter("sobrenome"));
 		pessoas.setTelefone(request.getParameter("telefone"));
+		pessoas.setEmail(request.getParameter("email"));
+		pessoas.setLinkedIn(request.getParameter("linkedIn"));
 		dao.updateById(pessoas);
 		response.sendRedirect("lista");
 	}
@@ -62,6 +64,8 @@ public class PessoasController extends HttpServlet {
 		pessoas.setNome(request.getParameter("nome"));
 		pessoas.setSobrenome(request.getParameter("sobrenome"));
 		pessoas.setTelefone(request.getParameter("telefone"));
+		pessoas.setEmail(request.getParameter("email"));
+		pessoas.setLinkedIn(request.getParameter("linkedIn"));
 		dao.save(pessoas);
 		response.sendRedirect("lista");
 	}

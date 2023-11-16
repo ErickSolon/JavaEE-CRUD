@@ -39,17 +39,25 @@
 					Telefone
 				</th>
 				<th>
+					E-mail
+				</th>
+				<th>
+					LinkedIn
+				</th>
+				<th>
 					Ações
 				</th>
 			</tr>
 		</thead>
 		<tbody>
-			<% for (JavaBeans pessoa : lstPessoas) {%>
+			<% for (JavaBeans pessoa : lstPessoas) { %>
 				<tr key="<%= pessoa.getId() %>">
 					<td><%= pessoa.getId() %></td>
-					<td><%= pessoa.getNome() %></td>
-					<td><%= pessoa.getSobrenome() %></td>
-					<td><%= pessoa.getTelefone() %></td>
+					<td><%= pessoa.getNome() == null ? "": pessoa.getNome() %></td>
+					<td><%= pessoa.getSobrenome() == null ? "": pessoa.getSobrenome() %></td>
+					<td><%= pessoa.getTelefone() == null ? "": pessoa.getTelefone() %></td>
+					<td><%= pessoa.getEmail() == null ? "": pessoa.getEmail() %></td>
+					<td><%= pessoa.getLinkedIn() == null ? "": pessoa.getLinkedIn() %></td>
 					<td>
 						<a href="delete?id=<%= pessoa.getId() %>">Deletar</a>
 						<a href="edit?id=<%= pessoa.getId() %>">Atualizar</a>

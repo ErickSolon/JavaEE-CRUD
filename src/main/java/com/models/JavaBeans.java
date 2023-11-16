@@ -5,18 +5,22 @@ public class JavaBeans {
 		super();
 	}
 
-	public JavaBeans(int id, String nome, String sobrenome, String telefone) {
+	public JavaBeans(int id, String nome, String sobrenome, String telefone, String email, String linkedIn) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.sobrenome = sobrenome;
 		this.telefone = telefone;
+		this.email = email;
+		this.linkedIn = linkedIn;
 	}
 
 	private int id;
 	private String nome;
 	private String sobrenome;
 	private String telefone;
+	private String email;
+	private String linkedIn;
 
 	public int getId() {
 		return id;
@@ -48,5 +52,21 @@ public class JavaBeans {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getLinkedIn() {
+		return linkedIn;
+	}
+
+	public void setLinkedIn(String linkedIn) {
+		this.linkedIn = linkedIn;
 	}
 }

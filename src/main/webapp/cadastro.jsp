@@ -14,6 +14,8 @@
 		Nome: <input type="text" name="nome">
 		Sobrenome: <input type="text" name="sobrenome">
 		Telefone: <input type="text" name="telefone">
+		Email: <input type="text" name="email">
+		LinkedIn: <input type="text" name="linkedIn">
 		<input type="submit" value="Cadastrar"/>
 	</form>
 </body>
